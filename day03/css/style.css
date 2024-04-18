@@ -1,0 +1,31 @@
+/* div + div {
+    font-family: arial;
+}
+
+p + p {
+    color: lime;
+} */
+
+/* p ~ p {
+    color: lime;
+} */
+
+/* div > p + p {
+    color: lime;
+}
+
+div > div + p {
+    color: lime;
+} */
+
+/* div div p {
+    color: lime;
+} */
+
+/* div > p {
+    color: lime;
+} */
+
+div  *  p {
+    color: lime;
+}
