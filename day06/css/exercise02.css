@@ -1,0 +1,12 @@
+.name {
+    font-size: 30px;
+    background-color: red;
+}
+
+* .name {
+    background-color: grey;
+}
+
+/* .user * {
+    background-color: green;
+} */
