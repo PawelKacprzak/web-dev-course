@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    margin: 100px auto;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    border: 15px solid royalblue;
+}
+
+.rect1 {
+    box-sizing: border-box;
+}
+
+.rect2 {
+    box-sizing: content-box; /* default in CSS */
+}

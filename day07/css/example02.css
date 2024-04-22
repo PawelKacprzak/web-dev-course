@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+div {
+    background-color: royalblue;
+    color: white;
+    float: left;
+}
+
+/* First Example - Vertical Margins = 20px not 40px */
+/* For 40px we can add margin-bottom: 40px in first div
+or margin-top:40px in second element */
+
+/* .rect1 {
+    width: 500px;
+    padding: 50px;
+    border: 4px dotted gold;
+    margin: 0 auto 20px;
+}
+
+.rect2 {
+    margin-top: 20px;
+} */
+
+/* Second Example - Horizontal Margins = 40px (20px + 20px) */
+
+.rect1 {
+    width: 400px;
+    height: 20vh;
+    padding: 20px;
+    border: 2px solid tomato;
+    margin-right: 20px;
+}
+
+.rect2 {
+    width: 170px;
+    margin-top: 20px;
+    margin-left: 20px;
+}

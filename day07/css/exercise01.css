@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    width: 260px;
+    margin: 20px 15px 0;
+    padding: 20px 0;
+    border: 3px solid orange;
+    border-radius: 10px;
+    background-color: black;
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: arial;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+
+a:hover {
+    background-color: #777;
+    color: lime;
+    border-color: black;
+}

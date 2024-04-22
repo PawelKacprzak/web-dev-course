@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+button {
+    display: block;
+    padding: 10px 30px;
+    margin: 100px auto 0;
+    background-color: #fff;
+    border: 4px dashed black;
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: black;
+    border-color: gold;
+    color: #ddd;
+}
