@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgb(4, 21, 72);
+    text-align: right;
+    padding-right: 35px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 10px 15px;
+    border: 4px solid magenta;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: magenta;
+    transition: .2s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: magenta;
+}
+
+header {
+    height: 300px;
+    background-color: darkcyan;
+}
+
+main {
+    min-height: 50vh;
+    background-color: aquamarine;
+}
+
+footer {
+    min-height: 100px;
+    background-color: cadetblue;
+}
