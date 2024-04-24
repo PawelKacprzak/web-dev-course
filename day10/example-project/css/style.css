@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    background-color: #ddd;
+}
+
+header div {
+    float: left;
+    width: 19%;
+    margin: 3%;
+    height: 125px;
+    background-color: black;
+}
+
+header div:nth-child(1):hover {
+    background-image: url("../img/cheese.jpg");
+    background-size: cover;
+    background-position: center;
+}
+  
+header div:nth-child(2):hover {
+    background-image: url("../img/choco.jpg");
+    background-size: cover;
+    background-position: center;
+}
+  
+  
+header div:nth-child(3):hover {
+    background-image: url("../img/curry.jpg");
+    background-size: cover;
+    background-position: center;
+}
+  
+  
+header div:nth-child(4):hover {
+    background-image: url("../img/sushi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0 10px 0px;
+}
+
+nav ul {
+    max-width: 1024px;
+    margin: 0 auto;
+    list-style: none;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+    width: 30%;
+    margin: 1.65%;
+}
+
+nav a {
+    display: block;
+    padding: 10px 30px;
+    border: 2px solid gold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gold;
+    transition: .4s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.blog {
+    max-width: 1024px;
+    margin: 40px auto 0;
+}
+
+main {
+    float: left;
+    width: 65%;
+}
+
+article {
+    margin-left: 4%;
+    margin-bottom: 6%;
+}
+
+article h2 {
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+article img {
+    width: 200px;
+    margin-right: 3%;
+    float: left;
+}
+
+article p {
+    font-size: 18px;
+}
+
+aside {
+    margin-right: 4%;
+}
+
+.contact {
+    float: right;
+    width: 25%;
+    height: 200px;
+    background-color: gold;
+}
+
+.title {
+    text-align: center;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fas {
+    margin: 8% 5%;
+}
+
+footer {
+    height: 7vh;
+    line-height: 7vh;
+    background-color: black;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}

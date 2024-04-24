@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.board {
+    width: 400px;
+    margin: 100px auto 0;
+    border: 3px solid black;
+    font-size: 0;
+}
+
+.board div {
+    /* float: left; */
+    display: inline-block;
+    width: 20%;
+    height: 80px;
+}
+
+.board div:nth-child(odd) {
+    background-color: darkcyan;
+}
+
+.board div:nth-child(even) {
+    background-color: rgb(0, 207, 207);
+}
+
+h1 {
+    margin-top: 25px;
+    text-align: center;
+    font-family: poppins, arial, sans-serif;
+}
+
+/* Comment on the solution with a more modern and optimal option, namely float: left + .clearfix class. To make it work, comment out or remove .board div {display: inline-block} and .board {font-size: 0} and then delete the current comments. */
