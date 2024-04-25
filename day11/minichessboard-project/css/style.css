@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .board {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px 0 0 50px;
+    border: 4px solid black;
+}
+
+span {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+span + span {
+    bottom: 0;
+    right: 0;
+} */
+
+/* I commented on my solution to the exercise, although it works, the instructor did it slightly differently. */
+
+.board {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 400px;
+    height: 400px;
+    border: 4px solid black;
+    /* alternative "border" */
+    /* box-shadow: 0 0 22px 2px black; */
+    /* centering */
+    /* top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px; */
+}
+
+span {
+    position: absolute;
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+}
+
+span:nth-child(2) {
+    width: 50%;
+    height: 50%;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    font-size: 40px;
+    color: #777;
+    cursor: pointer;
+}
+
+.menu-icon:hover .fa-burger {
+    color: black;
+}
+
+.white-space {
+    height: 200vh;
+}
