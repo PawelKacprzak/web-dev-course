@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    margin: 100px;
+    padding: 20px 60px 20px 100px;
+    border-radius: 12px;
+    font-size: 40px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+a.first {
+    background-image: url("../img/emoticon1.png");
+    background-position: 15px center;
+}
+
+a.first:hover {
+    background-image: url("../img/emoticon2.png");
+}
+
+a.second {
+    background-image: url("../img/emoticons.png");
+    background-position: 15px 4px;
+    /* transition: .5s; */
+}
+
+a.second:hover {
+    background-position: 15px -72.5px;
+}
