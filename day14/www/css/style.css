@@ -1,0 +1,221 @@
+/* 
+font-family: "Saira Condensed", sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #29a6dc;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    position: absolute;
+    height: 40%;
+    bottom: 0;
+    right: 0;
+}
+
+.welcome {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+}
+
+.welcome h1, h2 {
+    font-size: 20px;
+}
+
+.welcome h1 {
+    margin-top: 10px;
+    text-transform: none;
+}
+
+.welcome h2 {
+    font-weight: normal;
+}
+
+.welcome button {
+    padding: 0 20px;
+    background-color: #29a6dc;
+    border: 2px solid white;
+    line-height: 32px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+section {
+    height: 100vh;
+}
+
+
+
+@media (orientation: portrait) and (min-width: 360px) {
+
+    .welcome h1, h2 {
+        font-size: 24px;
+    }
+
+    .welcome button {
+        font-size: 16px;
+        line-height: 40x;
+    }
+
+    .profile-photo {
+        height: 50%;
+        bottom: 0;
+        right: -20%;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+
+    .welcome p {
+        font-size: 58px;
+    }
+
+    .welcome h1, h2 {
+        font-size: 36px;
+    }
+
+    .welcome button {
+        margin-top: 60px;
+        font-size: 28px;
+        line-height: 70px;
+    }
+
+    .profile-photo {
+        height: 55%;
+        bottom: 0;
+        right: 0%;
+    }
+
+}
+
+@media (orientation: landscape) {
+
+    .profile-photo {
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+    }
+
+    .welcome {
+        top: 12%;
+        left: 7%;
+        right: 50%;
+    }
+
+    header button {
+        margin-top: 35px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+
+    .welcome h1, h2 {
+        font-size: 24px;
+    }
+
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    .welcome {
+        top: 20%;
+        left: 5%;
+    }
+
+    .welcome p {
+        font-size: 56px;
+    }
+
+    .welcome h1 {
+        margin-top: 40px;
+        font-size: 34px;
+    }
+
+    .welcome h2 {
+        font-size: 34px;
+    }
+
+    .welcome button {
+        margin-top: 80px;
+        font-size: 24px;
+        line-height: 60px;
+    }
+
+    .profile-photo {
+        height: 85%;
+        right: -15%;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+
+    .welcome {
+        top: 13%;
+        left: 15%;
+        text-align: left;
+    }
+
+    .welcome p {
+        font-size: 90px;
+    }
+
+    .welcome h1, h2 {
+        font-size: 46px;
+    }
+
+    .welcome button {
+        margin-top: 80px;
+        font-size: 30px;
+        line-height: 62px;
+        border-width: 4px;
+    }
+
+    .profile-photo {
+        right: -5%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .welcome button {
+        cursor: pointer;
+        transition: .3s
+    }
+
+    .welcome button:hover {
+        background-color: #FFF;
+        color: #111;
+    }
+
+
+
+}
