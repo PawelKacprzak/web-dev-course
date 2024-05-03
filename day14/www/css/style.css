@@ -9,6 +9,12 @@ font-family: "Saira", sans-serif;
     padding: 0;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 header {
     position: relative;
     height: 100vh;
@@ -67,12 +73,48 @@ section {
 }
 
 .features {
-    margin-top: 50px;
+    max-width: 1600px;
+    margin: 50px auto 0;
     padding: 5%;
+    text-align: center;
 }
 
 .features h1 {
     font-family: "Saira Condensed", sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.features img {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+}
+
+.features h2 {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.features p {
+    font-family: "Saira", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.portfolio {
+    background-color: black;
+}
+
+.portfolio h1 {
+    font-size: 28px;
+    font-family: "Saira Condensed", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
 }
 
 
@@ -215,6 +257,38 @@ section {
 
 }
 
+@media (min-width: 360px) {
+
+    .features h1 {
+        font-size: 27px;
+    }
+
+    .features h2 {
+        font-size: 21px;
+    }
+
+    .features p {
+        font-size: 17px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+    .features h1 {
+        font-size: 32px;
+    }
+
+    .features h2 {
+        font-size: 26px;
+    }
+
+    .features p {
+        font-size: 20px;
+    }
+    
+}
+
 @media (min-width: 1024px) {
 
     .welcome button {
@@ -227,6 +301,42 @@ section {
         color: #111;
     }
 
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 30px;
+    }
 
+    .features h1 {
+        font-size: 38px;
+    }
+
+    .features h2 {
+        font-size: 22px;
+    }
+
+    .features p {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 1600px) {
+
+    .features {
+        padding: 60px;
+    }
+
+    .features h1 {
+        font-size: 60px;
+    }
+
+    .features h2 {
+        font-size: 36px;
+    }
+
+    .features p {
+        font-size: 22px;
+    }
 
 }
