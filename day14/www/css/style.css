@@ -1,5 +1,7 @@
 /* 
-font-family: "Saira Condensed", sans-serif; */
+font-family: "Saira Condensed", sans-serif;
+font-family: "Saira", sans-serif; 
+*/
 
 * {
     box-sizing: border-box;
@@ -62,6 +64,14 @@ header {
 
 section {
     height: 100vh;
+}
+
+.features {
+    margin-top: 50px;
+}
+
+.features h1 {
+    font-family: "Saira Condensed", sans-serif;
 }
 
 
