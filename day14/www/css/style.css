@@ -68,10 +68,6 @@ header {
     color: white;
 }
 
-section {
-    height: 100vh;
-}
-
 .features {
     max-width: 1600px;
     margin: 50px auto 0;
@@ -107,9 +103,12 @@ section {
 
 .portfolio {
     background-color: black;
+    padding: 10px 0 30px;
 }
 
 .portfolio h1 {
+    margin-bottom: 15px;
+    padding: 10px 20px;
     font-size: 28px;
     font-family: "Saira Condensed", sans-serif;
     text-align: center;
@@ -117,7 +116,196 @@ section {
     color: white;
 }
 
+.portfolio .web img {
+    width: 100%;
+}
 
+.portfolio .about {
+    text-align: left;
+    font-family: "Saira", sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    color: white;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .project {
+    margin-bottom: 20px;
+}
+
+.portfolio .project:nth-last-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-last-of-type(even) {
+    background-color: #29a6dc;
+}
+
+.slogan {
+    padding: 30px 10px;
+    text-align: center;
+    background-image: url("../images/motto.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+
+.slogan .bg {
+    padding: 30px 10px;
+    background-color: #003f7291;
+}
+
+.slogan h1 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+}
+
+.slogan p {
+    font-family: "Saira", sans-serif;
+    font-size: 18px;
+}
+
+.slogan .author {
+     font-size: 12px;
+     margin-top: 20px;
+}
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+}
+
+.hobby h1 {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+.hobby .item p {
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 0 0 2px yellow;
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.contact {
+    background-color: black;
+    padding: 30px 20px;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "Saira Condensed", sans-serif;
+    color: white;
+}
+
+.contact input, 
+.contact textarea, 
+.contact button {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-family: "Saira", sans-serif;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    border: 2px solid white;
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.contact .socials {
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding: 10px 0;
+    font-family: "Saira Condensed", sans-serif;
+    color: white;
+}
+
+.contact .social img {
+    float: left;
+}
+
+.contact .social span {
+    float: left;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 72px;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Saira", sans-serif;
+    background-color: #29a6dc;
+    color: white;
+}
 
 @media (orientation: portrait) and (min-width: 360px) {
 
@@ -160,6 +348,20 @@ section {
         right: 0%;
     }
 
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
 }
 
 @media (orientation: landscape) {
@@ -178,6 +380,38 @@ section {
 
     header button {
         margin-top: 35px;
+    }
+
+    .web, .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+    }
+    
+    .portfolio .project:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2 {
+        margin-left: 40px;
+        text-indent: 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+    }
+
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -224,6 +458,29 @@ section {
     .profile-photo {
         height: 85%;
         right: -15%;
+    }
+
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+        text-indent: 40px;
+    }
+
+    .portfolio .about p {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
+    .web, .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
     }
 
 }
@@ -273,6 +530,21 @@ section {
     
 }
 
+@media (min-width: 533px) {
+
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+
+}
+
 @media (min-width: 768px) {
 
     .features h1 {
@@ -285,6 +557,33 @@ section {
 
     .features p {
         font-size: 20px;
+    }
+
+    .slogan h1 {
+        font-size: 48px;
+        margin-bottom: 35px;
+    }
+
+    .slogan p {
+        font-size: 26px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .slogan .author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .hobby h1 {
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
     }
     
 }
@@ -319,6 +618,115 @@ section {
         font-size: 18px;
     }
 
+    .web, .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .slogan h1 {
+        font-size: 60px;
+        margin-bottom: 55px;
+    }
+
+    .slogan p {
+        font-size: 40px;
+    }
+
+    .slogan .author {
+        font-size: 30px;
+    }
+
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+
+    .contact h1 {
+        font-size: 60px;
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto; 
+    }
+
+    .contact input {
+        height: 46px;
+        font-size: 24px;
+    }
+
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .contact button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .contact button:hover {
+        background-color: white;
+        color: black;
+        border-color: rgb(0, 191, 255);
+    }
+
+    .contact input,
+    .contact textarea,
+    .contact button {
+        margin-bottom: 45px;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .portfolio .about h2 {
+        margin-bottom: 50px;
+        padding: 30px 0 30px;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    .portfolio .about p {
+        font-size: 20px;
+        line-height: 180%;
+    }
+
 }
 
 @media (min-width: 1600px) {
@@ -337,6 +745,14 @@ section {
 
     .features p {
         font-size: 22px;
+    }
+
+    .hobby h1 {
+        font-size: 60px;
+    }
+
+    .hobby .item p {
+        font-size: 40px;
     }
 
 }
